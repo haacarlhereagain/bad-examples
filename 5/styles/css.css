@@ -1,0 +1,225 @@
+a {
+	z-index: 2;
+	position: relative;
+}
+.gray-color-for-link {
+	color: #9c9c9c;
+	display: flex;
+}
+/*------------Слой с цветом фона----------------*/
+.background-color {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	width: 100%;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.background-color__left	{
+	width: 50%;
+}
+
+.background-color__right {
+	width: 50%;
+	background-color: #ede0df;
+}
+/*--------------Слой с  ссылками вперед-назад---------------*/
+.background {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	z-index: 3;
+}
+
+.back-next {
+	width: 10%;
+	margin: 1%;
+}
+
+.background__right-container {
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+ .background__left-container{
+ 	left: 0;
+ 	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+ }
+
+.prev-next {
+	height: 20px;
+	gray-color-for-link
+	flex-direction: row;
+	align-items: center;
+	letter-spacing: 1px;
+	padding: 15px;
+}
+
+.line {
+	width: 50px;
+	border-bottom: solid 1px #c0c0c0;
+	margin: 0 5px;
+}
+
+.background__central-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.background__central-container__top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20%;
+}
+
+.small-line {
+	border: 1px solid #000;
+	width: 1px;
+	margin: 2px;
+}
+
+.background__central-container__bottom {
+	margin-bottom: 10px;
+}
+
+.background__central-container__bottom a{
+	padding: 10px;
+}
+/*-------------------------левые вертикальные ссылки----------------------*/
+.container-vertical-line {
+	position: absolute;
+	width: 350px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: -150px;
+	margin-top: 350px;
+	transform: rotateZ(-90deg);
+	z-index: 5;
+}
+
+.container-vertical-line a {
+	color: #000;
+	font-size: 12px;
+	z-index: 10;
+}
+
+.vertical-line {
+	width: 180px;
+	border-bottom: solid 1px #000;
+}
+/*------------------------------Основной контент-------------------------------------*/
+.main-container {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+/*---------------------Левая часть основного контента---------------------*/
+.main-container__left-cont {
+	margin-left: 8%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 26%;
+}
+
+.main-container__left-cont__main-text {
+	margin-top: 20%;
+	color: #000;
+	font-size: 35px;
+}
+
+.main-container__left-cont__bottom-text {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 12px;
+	justify-content: space-between;
+}
+
+.main-container__left-cont__bottom-text__bottom-line {
+	width: 50%;
+	border-bottom: 1px solid #000;
+	font-size: 10px}
+
+/*-------------------Левый центральный блок------------*/
+.wrapper__main-container__center-left-cont {
+	width: 18%;
+	height: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+.main-container__center-left-cont {
+	width: 100%;
+	border-top: solid 1px #000;
+	margin-bottom: 3px;
+}
+
+.main-container__center-left-cont__main-content {
+	width: 70%;
+	margin-top: 20px;
+}
+/*-----------Правый центральный контент------------*/
+.main-container__center-right-cont {
+	margin-left: 10%;
+	height: 100%;	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.main-container__center-right-cont img {
+	margin: auto 0;
+	max-width: 100%;
+	max-height: 100%;
+}
+/*----------------Правый контент-------------*/
+.main-container__right-cont {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+}
+
+.right-numbers {
+	margin: 5px 0;
+}
+
+.main-container__right-cont__line {
+	border-bottom: 1px solid #000;
+	width: 100px;
+	transform: rotateZ(90deg);
+	margin: 60px 0;
+}
+
+.main-container__right-cont__first {
+	font-size: 30px;
+	margin-right: 19px;
+}
